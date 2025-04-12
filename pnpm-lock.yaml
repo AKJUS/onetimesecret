@@ -16,7 +16,7 @@ importers:
         version: 1.7.23(vue@3.5.13(typescript@5.6.3))
       '@intlify/core':
         specifier: ^11.1.2
-        version: 11.1.2
+        version: 11.1.3
       '@prettier/plugin-ruby':
         specifier: ^4.0.4
         version: 4.0.4(prettier@3.4.2)
@@ -730,12 +730,16 @@ packages:
     resolution: {integrity: sha512-nmG512G8QOABsserleechwHGZxzKSAlggGf9hQX0nltvSwyKNVuB/4o6iFeG2OnjXK253r8p8eSDOZf8PgFdWw==}
     engines: {node: '>= 16'}
 
+  '@intlify/core-base@11.1.3':
+    resolution: {integrity: sha512-cMuHunYO7LE80azTitcvEbs1KJmtd6g7I5pxlApV3Jo547zdO3h31/0uXpqHc+Y3RKt1wo2y68RGSx77Z1klyA==}
+    engines: {node: '>= 16'}
+
   '@intlify/core-base@9.14.2':
     resolution: {integrity: sha512-DZyQ4Hk22sC81MP4qiCDuU+LdaYW91A6lCjq8AWPvY3+mGMzhGDfOCzvyR6YBQxtlPjFqMoFk9ylnNYRAQwXtQ==}
     engines: {node: '>= 16'}
 
-  '@intlify/core@11.1.2':
-    resolution: {integrity: sha512-OnBHcGRJbaeGrmBJV4YuK2E0xR7p1nKy1BeVqUqAFv9PQtYuY17cmdEoA3XjwN8HpuE2AsKwWyTmQ3nvFwx+yw==}
+  '@intlify/core@11.1.3':
+    resolution: {integrity: sha512-MDa8iYcq6Kzt2z7XstMIc/KyXEbXc60mTgWXNbwuHSzXoJJ8hzjXLeVd0XEJBfwl7rOKJ/pwkVwJ3tjlfOvfpQ==}
     engines: {node: '>= 16'}
 
   '@intlify/devtools-types@11.1.2':
@@ -752,12 +756,20 @@ packages:
     resolution: {integrity: sha512-T/xbNDzi+Yv0Qn2Dfz2CWCAJiwNgU5d95EhhAEf4YmOgjCKktpfpiUSmLcBvK1CtLpPQ85AMMQk/2NCcXnNj1g==}
     engines: {node: '>= 16'}
 
+  '@intlify/message-compiler@11.1.3':
+    resolution: {integrity: sha512-7rbqqpo2f5+tIcwZTAG/Ooy9C8NDVwfDkvSeDPWUPQW+Dyzfw2o9H103N5lKBxO7wxX9dgCDjQ8Umz73uYw3hw==}
+    engines: {node: '>= 16'}
+
   '@intlify/message-compiler@9.14.2':
     resolution: {integrity: sha512-YsKKuV4Qv4wrLNsvgWbTf0E40uRv+Qiw1BeLQ0LAxifQuhiMe+hfTIzOMdWj/ZpnTDj4RSZtkXjJM7JDiiB5LQ==}
     engines: {node: '>= 16'}
 
   '@intlify/shared@11.1.2':
     resolution: {integrity: sha512-dF2iMMy8P9uKVHV/20LA1ulFLL+MKSbfMiixSmn6fpwqzvix38OIc7ebgnFbBqElvghZCW9ACtzKTGKsTGTWGA==}
+    engines: {node: '>= 16'}
+
+  '@intlify/shared@11.1.3':
+    resolution: {integrity: sha512-pTFBgqa/99JRA2H1qfyqv97MKWJrYngXBA/I0elZcYxvJgcCw3mApAoPW3mJ7vx3j+Ti0FyKUFZ4hWxdjKaxvA==}
     engines: {node: '>= 16'}
 
   '@intlify/shared@9.14.2':
@@ -4142,15 +4154,20 @@ snapshots:
       '@intlify/message-compiler': 11.1.2
       '@intlify/shared': 11.1.2
 
+  '@intlify/core-base@11.1.3':
+    dependencies:
+      '@intlify/message-compiler': 11.1.3
+      '@intlify/shared': 11.1.3
+
   '@intlify/core-base@9.14.2':
     dependencies:
       '@intlify/message-compiler': 9.14.2
       '@intlify/shared': 9.14.2
 
-  '@intlify/core@11.1.2':
+  '@intlify/core@11.1.3':
     dependencies:
-      '@intlify/core-base': 11.1.2
-      '@intlify/shared': 11.1.2
+      '@intlify/core-base': 11.1.3
+      '@intlify/shared': 11.1.3
 
   '@intlify/devtools-types@11.1.2':
     dependencies:
@@ -4187,12 +4204,19 @@ snapshots:
       '@intlify/shared': 11.1.2
       source-map-js: 1.2.1
 
+  '@intlify/message-compiler@11.1.3':
+    dependencies:
+      '@intlify/shared': 11.1.3
+      source-map-js: 1.2.1
+
   '@intlify/message-compiler@9.14.2':
     dependencies:
       '@intlify/shared': 9.14.2
       source-map-js: 1.2.1
 
   '@intlify/shared@11.1.2': {}
+
+  '@intlify/shared@11.1.3': {}
 
   '@intlify/shared@9.14.2': {}
 
